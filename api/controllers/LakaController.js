@@ -20,7 +20,7 @@ async function sent_message(data_body, is_sent_back = false) {
         return false;
     }
 
-    let url_sent = 'https://laka.lampart-vn.com:9443/api/v2/message/sent';
+    let url_sent = 'https://laka.lampart-vn.com/api/v2/message/sent';
     let data_post = {
         message_id: null,
         message: data_body.message,
@@ -79,7 +79,7 @@ async function sent_message(data_body, is_sent_back = false) {
 
 async function laka_login_and_sent_back(data_body) {
 
-    let url_login = 'https://laka.lampart-vn.com:9443/api/v1/user/login';
+    let url_login = 'https://laka.lampart-vn.com/api/v1/user/login';
     let data_post = {
         email: data_body.email,
         password: data_body.password,
